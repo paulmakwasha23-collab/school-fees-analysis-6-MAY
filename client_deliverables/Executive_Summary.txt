@@ -1,0 +1,20 @@
+
+School fees analyst report
+geneerated: 2026-05-06
+
+
+key metrics:
+    total fees due: $1,701,697.00
+    total collected: $1,327,399.00
+    recovery rate: 0.78
+    
+    
+top top 3 insights:
+    1. Form 1 has highest total due: $494,470.00
+    2. Form 1 has most unpaid accounts: 140 students
+    3. overal recovery is 0.78. School target is 85%.
+    
+recommendations:
+    - send sms to 283 students with "Late" status.
+    - focus recovery efforts on Form 1 and Form 2.
+    - offer early payment discount for term 2 to improve cashflow.

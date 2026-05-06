@@ -1,0 +1,30 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime,timedelta
+import os
+
+
+os.makedirs("client_deliverables",exist_ok=True)
+
+
+np.random.seed(101)
+grades = ["Form 1","Form 2","Form 3","Form 4","Form 5","Form 6"]
+terms = ["Term 1","Term 2","Term 3"]
+status =["Paid","Partial","Unpaid","Late"]
+
+df = pd.DataFrame({
+    "StudentID":[f"SM{2000+i}" for i in range(3000)],
+    "Grade":np.random.choice(grades,3000,p=[0.3,0.25,0.2,0.12,0.08,0.05]),
+    "Term":np.random.choice(terms,3000),
+    "FeesDue":np.random.randint(250,900,3000),
+    "FeesPaid":np.random.randint(0,900,3000),
+    "PaymentStatus":np.random.choice(status,3000,p=[0.55,0.2,0.15,0.1]),
+    "PaymentDate":pd.to_datetime("2026-01-01")+pd.to_timedelta(np.random.randint(0,120,3000),unit="D")
+    })
+df["Balance"] =(df["FeesDue"]-df["FeesPaid"]).clip(lower=0)
+df["DaysLate"] = np.where(df["PaymentStatus"]=="Late",np.random.randint(1,30,3000),0)
+
+df.head()
+df.show()
+
