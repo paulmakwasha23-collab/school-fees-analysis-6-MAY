@@ -24,10 +24,12 @@ This project analyzes simulated school fee payment data using Python (pandas, ma
 ## How to Run the Script
 Install requirements:
 pip install pandas numpy matplotlib seaborn
+
+
 THEN RUN THIS SCRIPT:
 
  
- CodeTuesdaySchoolPythonDataAnalyst5May.py
+CodeTuesdaySchoolPythonDataAnalyst5May.py
 
 
 
