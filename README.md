@@ -25,5 +25,12 @@ This project analyzes simulated school fee payment data using Python (pandas, ma
 Install requirements:
 pip install pandas numpy matplotlib seaborn
 THEN RUN THIS SCRIPT:
+
+ 
  CodeTuesdaySchoolPythonDataAnalyst5May.py
+
+
+
+
+
 AUTHOR; Paul Makwasha and Meta ai, debugged with DeepSeek 
